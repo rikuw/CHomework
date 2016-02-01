@@ -25,9 +25,12 @@ toimitus käyttäen pelkkiä pointtereita. Kaikki mainiin
 void main()
 {
 	int a, b, tulo;
-	int *ap = &a;
-	int *bp = &b;
-	int *tulop = &tulo;
+	int *ap;
+	int *bp;
+	int *tulop;
+	ap = &a;
+	bp = &b;
+	tulop = &tulo;
 
 	printf("Anna luku 1 : ");
 	scanf("%d", ap);
