@@ -65,18 +65,18 @@ void main()
 	// KT 1
 
 	int valmis = 0;
-	struct Solmu* pNyk = pLista;
+	pUusi = pLista;
 
 	do
 	{
-		if (pNyk->pNext == NULL)
+		if (pUusi->pNext == NULL)
 		{
 			valmis = 1;
 		}
 
-		int a = pNyk->data;
+		int a = pUusi->data;
 		printf("Data : %d\n", a);
-		pNyk = pNyk->pNext;
+		pUusi = pUusi->pNext;
 	} while (valmis != 1);
 
 	// KT 2
@@ -138,19 +138,19 @@ void main()
 
 	// Tulostaminen
 
-	pNyk = pLista;
+	pUusi = pLista;
 
 	valmis = 0;
 	do
 	{
-		if (pNyk->pNext == NULL)
+		if (pUusi->pNext == NULL)
 		{
 			valmis = 1;
 		}
 
-		int a = pNyk->data;
+		int a = pUusi->data;
 		printf("Data : %d\n", a);
-		pNyk = pNyk->pNext;
+		pUusi = pUusi->pNext;
 	} while (valmis != 1);
 
 	// Vapauttaminen
